@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+#titleBold {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+body {
+  background-color: #002339;
+  color: beige;
+}
+
+.container {
+  margin: 12% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+}
+
+.display {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: #fff;
+  color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 20px;
+  border-radius: 5px;
+}
+
+.container h1 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1.2;
+}
+#subtitleBold {
+  color: #019f55;
+  font-weight: bolder;
+  border-bottom: 4px solid #019f55;
+  padding-bottom: 7px;
+}
+
+.display img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.display input {
+  border: 0;
+  outline: 0;
+  font-size: 24px;
+}
+
+.container button img {
+  width: 28px;
+  margin-right: 10px;
+}
+
+.container button {
+  border: 0;
+  outline: 0;
+  background: #019f55;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 26px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #017944;
+}
+.container button:focus {
+  outline: 2px solid #017944;
+  outline-offset: 4px;
+}
+.container button:active {
+  transform: translateY(1px);
+}
+.generated {
+  animation: highlight 0.5s;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
+/* Responsive design adjustments */
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin: 8% auto;
+    padding: 10px;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .display input {
+    font-size: 18px;
+  }
+
+  .container button {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .display input {
+    font-size: 20px;
+  }
+
+  .container button {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .display input {
+    font-size: 18px;
+  }
+
+  .container button {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}

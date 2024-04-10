@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <!-- Collegamento al file CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span id="titleBold">GuardianPass:</span> <br />
+        Your Shield Against Digital Intruders
+      </h1>
+      <br />
+      <h1>Generate a <br /><span id="subtitleBold">RANDOM password!</span></h1>
+      <div class="display">
+        <input type="text" id="password" placeholder="Password" />
+        <img src="images/copy.png" alt="image" onclick="copyPassword()" />
+      </div>
+      <button onclick="createPassword()">
+        <img src="images/generate.png" alt="button image" />Generate Password
+      </button>
+    </div>
+
+    <!-- Collegamento al file JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
